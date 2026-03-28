@@ -17,6 +17,8 @@
     h2 { color: #1a1a1a; font-size: 22px; margin-top: 36px; border-bottom: 2px solid #FF3366; padding-bottom: 6px; }
     h3 { color: #1a1a1a; font-size: 17px; margin-top: 24px; }
     p { color: #555; margin-bottom: 14px; }
+    ul { color: #555; margin-bottom: 14px; padding-left: 24px; }
+    li { margin-bottom: 6px; }
     .warning {
       background: #FFF5F7;
       border-left: 4px solid #EF4444;
@@ -27,6 +29,13 @@
     .emergency {
       background: #fff3f3;
       border-left: 4px solid #FF3366;
+      padding: 16px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+    .notice {
+      background: #f0f8ff;
+      border-left: 4px solid #0066cc;
       padding: 16px;
       border-radius: 8px;
       margin-bottom: 16px;
@@ -47,6 +56,21 @@
     <strong>MEDICAL EMERGENCY:</strong> If you think you may have a medical emergency, call your doctor or 911 (US) immediately. Do not delay seeking medical treatment based on anything you read on this app.
   </div>
 
+  <div class="notice">
+    <strong>App Purpose Notice:</strong> This app provides health and mental health tools including screening recommendations, tracking, calculators, and reminders based on publicly available guidelines from the CDC, USPSTF, WHO, American Cancer Society, and American Diabetes Association, etc., and is for informational purposes only.
+    <br/><br/>
+    The recommendations are automated based on standardized guidelines and should not be considered medical advice or treatment recommendations.
+  </div>
+
+  <h2>Disclaimer</h2>
+  <p>This app provides general health screening recommendations based on user-provided information and is intended for adults over 18 years old. It is intended for informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment.</p>
+  <p>Always seek the advice of your physician or other qualified healthcare provider with any questions you may have regarding a medical condition or screening.</p>
+  <p>Using this app does not create a doctor-patient relationship between you and PulseLoop LLC or any of its affiliates.</p>
+  <p>The recommendations provided are based on publicly available clinical guidelines (CDC, USPSTF, WHO, etc.) and are not created by, and are not intended to replace, healthcare professionals licensed to practice in your country or region.</p>
+  <p>The guidelines are based on US and international health references. Medical screening guidelines may differ in your region. Always consult with healthcare providers licensed in your jurisdiction.</p>
+  <p>The frequencies mentioned for screening tests are accurate as long as your test results remain normal. Follow your provider's guidance for any abnormal results.</p>
+  <p>Note that these recommended screening tests are not all the screening tests; they are the most common ones, so it is a good idea to always ask your healthcare provider for advice.</p>
+
   <h2>Privacy Policy</h2>
   <p>Your privacy is important to us. This Privacy Policy outlines the types of information the app collects, how it is used, and the measures taken to protect your information. By using the app, you agree to the terms of this Privacy Policy.</p>
 
@@ -57,7 +81,7 @@
   <p>PulseLoop Health uses your device camera solely for the Heart Rate Detector feature, which measures heart rate using the camera flash and lens (photoplethysmography). Camera access is also used to take photos of lab result documents for upload. Camera data is processed on-device and is never transmitted to our servers or shared with third parties.</p>
 
   <h3>Cookies and Analytics</h3>
-  <p>We use Google Analytics to understand app usage patterns. This service uses cookies and similar technologies but does not collect personally identifiable information.</p>
+  <p>We use Google Analytics to understand app usage patterns. This service uses cookies and similar technologies but does not collect personally identifiable information. You can opt out of Google Analytics by using the Google Analytics Opt-out Browser Add-on.</p>
 
   <h3>Data Security</h3>
   <p>Your saved documents, health data, and personal information are encrypted and stored securely in our backend database. Your data is only accessible to you and is not available to anyone else, including app administrators, except as required by law. Lab results storage is limited to 500MB per user account.</p>
@@ -67,24 +91,76 @@
   <p>We may update this Privacy Policy from time to time. Changes will be posted within the app.</p>
 
   <h2>Terms of Service</h2>
-  <p>Please read these Terms of Service carefully before using the app. By accessing or using the app, you agree to be bound by these Terms.</p>
+  <p>Please read these Terms of Service carefully before using the app. By accessing or using the app, you agree to be bound by these Terms. If you disagree with any part of these Terms, you may not access the app.</p>
 
   <h3>Age Requirement</h3>
-  <p>You must be at least 18 years old to use this app. If you are under 18, you may only use this app with the permission and supervision of a parent or legal guardian.</p>
+  <p>You must be at least 18 years old to use this app. If you are under 18, you may only use this app with the permission and supervision of a parent or legal guardian who agrees to these Terms on your behalf.</p>
 
   <h3>Subscription &amp; Payment</h3>
   <p>Some features require a paid subscription ($4.99/month). Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period. You can manage subscriptions in your App Store or Google Play account settings.</p>
 
-  <h3>Disclaimer</h3>
-  <p>This app provides general health screening recommendations based on user-provided information and is intended for adults over 18 years old. It is intended for informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment.</p>
-  <p>Always seek the advice of your physician or other qualified healthcare provider with any questions you may have regarding a medical condition or screening.</p>
-  <p>Using this app does not create a doctor-patient relationship between you and PulseLoop LLC or any of its affiliates.</p>
+  <h3>User Responsibilities</h3>
+  <p>You are responsible for:</p>
+  <ul>
+    <li>Providing accurate and complete health information</li>
+    <li>Maintaining the confidentiality of your account credentials</li>
+    <li>Using the app in compliance with applicable laws and regulations</li>
+    <li>Consulting healthcare professionals for medical decisions</li>
+  </ul>
+
+  <h3>Reminders &amp; Notifications</h3>
+  <p>Our reminder features (medication reminders, appointment reminders, screening reminders, and period tracker alerts) require an active internet connection to function properly.</p>
+  <p>Reminders are delivered via push notifications through Firebase Cloud Messaging, which requires your device to be connected to cellular data or Wi-Fi at the time the reminder is scheduled to be sent.</p>
+  <p>Please ensure your device maintains internet connectivity to receive timely notifications. We strongly recommend not relying solely on app reminders for critical medical needs, such as time-sensitive medications.</p>
+  <p>You should maintain backup reminder systems (such as phone alarms, pill organizers, or caregiver assistance) to ensure you do not miss important health-related tasks.</p>
+  <p>PulseLoop LLC is not liable for missed reminders due to internet connectivity issues, network failures, device settings that block notifications, software errors, or any other technical limitations.</p>
+  <p>You are solely responsible for managing your medications, appointments, and health-related schedules. Do NOT rely solely on this app for time-sensitive medical reminders. PulseLoop LLC is not liable for any harm, missed doses, missed appointments, or adverse health outcomes resulting from missed, delayed, or undelivered notifications.</p>
+
+  <h3>AI Health Assistant</h3>
+  <p>PulseLoop Health includes an AI-powered health assistant feature. By using this feature, you acknowledge and agree to the following:</p>
+  <ul>
+    <li>The AI Health Assistant is NOT a doctor, medical professional, or licensed healthcare provider.</li>
+    <li>AI responses may be inaccurate, incomplete, or outdated and should never be used as a substitute for professional medical advice, diagnosis, or treatment.</li>
+    <li>Do NOT use the AI Health Assistant in emergencies. Call 911 (US) or your local emergency number immediately.</li>
+    <li>Do NOT make any medical decisions based solely on AI responses.</li>
+    <li>Always consult a licensed healthcare provider for any medical concerns.</li>
+    <li>The AI assistant usage is limited to 1 message per day for free users and 20 messages per day for subscribed users. These limits are subject to change.</li>
+    <li>The AI Health Assistant is powered by Anthropic's Claude AI. Your messages are sent to Anthropic's servers to generate responses. By using this feature, you agree to Anthropic's usage policies.</li>
+    <li>Images shared in the AI Health Assistant are not stored or saved by PulseLoop LLC. They are transmitted directly to Anthropic's servers solely to generate a response and are discarded immediately afterward.</li>
+  </ul>
+  <p>PulseLoop LLC is not liable for any actions taken, decisions made, or harm resulting from reliance on AI Health Assistant responses. The AI assistant is provided as an informational convenience feature only.</p>
+
+  <h3>Emergency Situations</h3>
+  <p>If you are experiencing a medical emergency, call 911 (US) or your local emergency number immediately. Do NOT rely on this app for emergency medical assistance.</p>
+  <p>If you are experiencing a mental health crisis or having thoughts of suicide, contact the Suicide &amp; Crisis Lifeline (US only) by calling or texting 988.</p>
+
+  <h3>Reminder &amp; Notification Disclaimer</h3>
+  <p>PulseLoop LLC does not guarantee the delivery, accuracy, or timeliness of any reminders or push notifications sent through the app, including but not limited to medication reminders, appointment reminders, period tracker alerts, and screening reminders.</p>
+  <p>Notifications may be delayed, blocked, or not delivered due to factors outside our control, including device settings, operating system restrictions, internet connectivity, app permissions, low battery, or other technical issues.</p>
+
+  <h3>Disclaimer of Warranties</h3>
+  <p>The app is intended for informational purposes only and does not provide medical advice, diagnosis, or treatment. Always seek the advice of a healthcare professional with any medical concerns you may have.</p>
+  <p>While we strive to provide accurate information based on established clinical guidelines, the content in this app — including but not limited to health screenings, calculators, trackers, recommendations, and all other features — may contain errors, inaccuracies, or mistakes. You should not rely on this app as your sole source of health information.</p>
+  <p>We do not guarantee the accuracy, completeness, or suitability of any information, tools, or recommendations provided by the app. THE APP IS PROVIDED "AS IS" WITHOUT ANY WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED.</p>
 
   <h3>Limitation of Liability</h3>
   <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL PULSELOOP LLC BE LIABLE FOR ANY DIRECT, INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL, CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF USE, DATA, OR PROFITS, ARISING OUT OF OR IN ANY WAY CONNECTED WITH THE USE OR PERFORMANCE OF THIS APP.</p>
 
-  <h3>Governing Law</h3>
-  <p>These Terms shall be governed by and construed in accordance with the laws of the State of California.</p>
+  <h3>Indemnification</h3>
+  <p>You agree to defend, indemnify, and hold harmless PulseLoop LLC, its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses, including without limitation reasonable attorney's fees and costs, arising out of or in any way connected with your access to or use of the app.</p>
+
+  <h3>Governing Law and Jurisdiction</h3>
+  <p>These Terms shall be governed by and construed in accordance with the laws of the State of California, without regard to its conflict of law provisions.</p>
+  <p>You agree to submit to the personal jurisdiction of the courts located within California for the purpose of litigating all such claims or disputes.</p>
+
+  <h3>Severability</h3>
+  <p>If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary so that these Terms shall otherwise remain in full force and effect and enforceable.</p>
+
+  <h3>Changes to Terms</h3>
+  <p>We reserve the right to modify or discontinue the app at any time without notice. We may also update these Terms from time to time, and any changes will be posted within the app. Continued use of the app after changes constitutes acceptance of the updated terms.</p>
+
+  <h3>Intellectual Property</h3>
+  <p>All intellectual property rights in the app and its content are owned by or licensed to PulseLoop LLC. You may not use, reproduce, or distribute any part of the app without our prior written consent.</p>
 
   <p class="last-updated">Last Updated: February 2026 &mdash; PulseLoop LLC</p>
 
