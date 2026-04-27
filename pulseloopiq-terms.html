@@ -1,0 +1,329 @@
+<!DOCTYPE html>                                                                                                     
+<html lang="en">                                          
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />                                          
+  <title>Terms of Service — PulseLoop IQ</title>
+  <style>                                                                                                           
+    * { margin: 0; padding: 0; box-sizing: border-box; }                                                            
+ 
+    body {                                                                                                          
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #f9f9fb;                                                                                          
+      color: #1a1a2e;
+      line-height: 1.7;                                                                                             
+    }                                                     
+
+    header {                                                                                                        
+      background: #ffffff;
+      border-bottom: 1px solid #e8e8f0;                                                                             
+      padding: 20px 24px;                                 
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      position: sticky;                                                                                             
+      top: 0;
+      z-index: 10;                                                                                                  
+    }                                                     
+
+    .logo-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #f0eeff;                                                                                          
+      border: 2px solid #6C63FF;
+      display: flex;                                                                                                
+      align-items: center;                                
+      justify-content: center;
+      flex-shrink: 0;
+    }                                                                                                               
+ 
+    .logo-circle svg {                                                                                              
+      width: 20px;                                        
+      height: 20px;
+    }
+
+    .logo-text {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.5px;                                                                                       
+    }
+                                                                                                                    
+    .logo-text .pulse { color: #6C63FF; }                 
+    .logo-text .loop { color: #1a1a2e; }
+    .logo-text .iq { color: #6C63FF; }                                                                              
+ 
+    .container {                                                                                                    
+      max-width: 760px;                                   
+      margin: 40px auto;
+      padding: 0 24px 80px;
+    }                                                                                                               
+ 
+    .card {                                                                                                         
+      background: #ffffff;                                
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }                                                                                                               
+ 
+    h1 {                                                                                                            
+      font-size: 28px;                                    
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #1a1a2e;
+      margin-bottom: 4px;                                                                                           
+    }
+                                                                                                                    
+    .effective-date {                                     
+      font-size: 13px;
+      color: #999;
+      margin-bottom: 24px;                                                                                          
+    }
+                                                                                                                    
+    .intro {                                              
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 32px;
+      padding-bottom: 24px;                                                                                         
+      border-bottom: 1px solid #f0f0f5;
+    }                                                                                                               
+                                                          
+    .section {                                                                                                      
+      margin-bottom: 32px;
+      padding-bottom: 32px;                                                                                         
+      border-bottom: 1px solid #f0f0f5;                   
+    }                                                                                                               
+ 
+    .section:last-child {                                                                                           
+      border-bottom: none;                                
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: 700;                                                                                             
+      color: #1a1a2e;
+      margin-bottom: 12px;                                                                                          
+    }                                                     
+
+    p {
+      font-size: 14px;
+      color: #555;                                                                                                  
+      margin-bottom: 10px;
+    }                                                                                                               
+                                                          
+    ul {
+      padding-left: 20px;
+      margin-bottom: 10px;                                                                                          
+    }
+                                                                                                                    
+    ul li {                                               
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 6px;
+    }
+
+    a {                                                                                                             
+      color: #6C63FF;
+      text-decoration: none;                                                                                        
+    }                                                     
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .badge {                                                                                                        
+      display: inline-block;
+      background: #f0eeff;                                                                                          
+      color: #6C63FF;                                     
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 20px;                                                                                          
+      margin-bottom: 20px;
+    }                                                                                                               
+                                                          
+    .contact-box {                                                                                                  
+      background: #f8f7ff;
+      border: 1px solid #e0dcff;                                                                                    
+      border-radius: 12px;                                
+      padding: 20px;
+      margin-top: 8px;
+    }                                                                                                               
+ 
+    .contact-box p {                                                                                                
+      margin-bottom: 4px;                                 
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #aaa;                                                                                                  
+      margin-top: 40px;
+    }                                                                                                               
+                                                          
+    @media (max-width: 600px) {
+      .card { padding: 24px 20px; }
+      h1 { font-size: 22px; }
+      .container { margin: 20px auto; }                                                                             
+    }
+  </style>                                                                                                          
+</head>                                                   
+<body>
+
+  <header>
+    <div class="logo-circle">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="2" stroke-linecap="round"                 
+stroke-linejoin="round">                                                                                            
+        <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58   
+2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/>                                                
+        <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 
+2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/>                                               
+      </svg>                                              
+    </div>                                                                                                          
+    <div class="logo-text">                               
+      <span class="pulse">Pulse</span><span class="loop">Loop</span><span class="iq"> IQ</span>
+    </div>                                                                                                          
+  </header>
+                                                                                                                    
+  <div class="container">                                 
+    <div class="card">
+
+      <span class="badge">Legal</span>                                                                              
+      <h1>Terms of Service</h1>
+      <p class="effective-date">Effective Date: April 27, 2026</p>                                                  
+                                                                                                                    
+      <p class="intro">Welcome to PulseLoop IQ. These Terms of Service ("Terms") govern your access to and use of   
+the PulseLoop IQ mobile application (the "App") operated by PulseLoop LLC ("we," "us," or "our"). By creating an    
+account or using the App, you agree to be bound by these Terms. If you disagree with any part of these Terms, please
+ do not use the App.</p>                                  
+
+      <div class="section">
+        <h2>1. Eligibility</h2>
+        <p>You must be at least 13 years old to use PulseLoop IQ. By using the App, you represent and warrant that
+you meet this age requirement and have the legal capacity to enter into these Terms. If you are under 18, you must  
+have your parent or legal guardian's permission to use the App.</p>
+      </div>                                                                                                        
+                                                          
+      <div class="section">
+        <h2>2. Account Registration</h2>
+        <p>To use most features of the App, you must create an account. You agree to:</p>                           
+        <ul>
+          <li>Provide accurate, current, and complete information during registration.</li>                         
+          <li>Keep your password secure and confidential.</li>                                                      
+          <li>Notify us immediately of any unauthorized use of your account.</li>
+          <li>Be responsible for all activity that occurs under your account.</li>                                  
+        </ul>                                             
+        <p>We reserve the right to suspend or terminate accounts that violate these Terms.</p>
+      </div>                                                                                                        
+
+      <div class="section">                                                                                         
+        <h2>3. User Content</h2>                          
+        <p>The App allows you to post puzzles, riddles, comments, replies, images, and other content ("User
+Content"). You retain ownership of your User Content, but by posting it, you grant PulseLoop LLC a worldwide,       
+non-exclusive, royalty-free license to use, display, reproduce, and distribute your User Content within the App.</p>
+        <p>You are solely responsible for your User Content and represent that:</p>                                 
+        <ul>                                              
+          <li>You own or have the necessary rights to post it.</li>
+          <li>It does not violate any law, third-party right, or these Terms.</li>                                  
+          <li>It is not misleading, false, or harmful.</li>                                                         
+        </ul>                                                                                                       
+      </div>                                                                                                        
+                                                          
+      <div class="section">                                                                                         
+        <h2>4. Prohibited Conduct</h2>                    
+        <p>When using the App, you agree not to:</p>
+        <ul>
+          <li>Post content that is unlawful, harassing, threatening, defamatory, hateful, or obscene.</li>          
+          <li>Impersonate any person or entity, or misrepresent your affiliation.</li>                              
+          <li>Post sexually explicit content, content involving minors in a sexual manner, or graphic violence.</li>
+          <li>Spam, send unsolicited promotional content, or engage in commercial advertising without our written   
+permission.</li>                                                                                                    
+          <li>Attempt to gain unauthorized access to any part of the App, other accounts, or our systems.</li>      
+          <li>Use bots, scrapers, or automated tools to access the App.</li>                                        
+          <li>Interfere with or disrupt the App's functionality or servers.</li>                                    
+          <li>Violate any applicable law or regulation.</li>                                                        
+        </ul>                                                                                                       
+        <p>Violating these rules may result in account suspension or permanent ban without notice.</p>
+      </div>                                                                                                        
+                                                          
+      <div class="section">                                                                                         
+        <h2>5. Reporting and Moderation</h2>              
+        <p>You can report content or users you believe violate these Terms using the reporting tools within the App.
+ We review reports and take appropriate action, which may include removing content or suspending accounts. We       
+reserve the right to remove any content at our sole discretion without prior notice.</p>
+      </div>                                                                                                        
+                                                          
+      <div class="section">
+        <h2>6. Intellectual Property</h2>
+        <p>The App, including its design, features, logos, and content created by us, is owned by PulseLoop LLC and
+protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, or   
+create derivative works of the App without our written permission.</p>
+      </div>                                                                                                        
+                                                          
+      <div class="section">
+        <h2>7. Termination</h2>
+        <p>You may delete your account at any time using the "Delete Account" feature in Settings. We may suspend or
+ terminate your account at any time, with or without notice, if we believe you have violated these Terms or for any 
+other reason at our discretion. Upon termination, your right to use the App will immediately cease.</p>
+      </div>                                                                                                        
+                                                          
+      <div class="section">
+        <h2>8. Disclaimers</h2>
+        <p>The App is provided on an "as is" and "as available" basis. We make no warranties, express or implied,   
+regarding the App, including but not limited to its accuracy, reliability, or availability. To the fullest extent   
+permitted by law, we disclaim all warranties, including warranties of merchantability, fitness for a particular     
+purpose, and non-infringement.</p>                                                                                  
+        <p>User Content posted on the App reflects the views of its authors, not of PulseLoop LLC. We do not endorse
+ or guarantee the accuracy of any User Content.</p>                                                                 
+      </div>
+                                                                                                                    
+      <div class="section">                               
+        <h2>9. Limitation of Liability</h2>
+        <p>To the fullest extent permitted by law, PulseLoop LLC and its affiliates, officers, employees, and agents
+ shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use
+ of the App, including but not limited to loss of data, loss of profits, or emotional distress, even if we have been
+ advised of the possibility of such damages.</p>                                                                    
+      </div>                                              
+
+      <div class="section">                                                                                         
+        <h2>10. Indemnification</h2>
+        <p>You agree to indemnify and hold harmless PulseLoop LLC and its affiliates from any claims, damages,      
+losses, or expenses (including reasonable attorneys' fees) arising from your use of the App, your User Content, or  
+your violation of these Terms.</p>
+      </div>                                                                                                        
+                                                          
+      <div class="section">                                                                                         
+        <h2>11. Changes to These Terms</h2>
+        <p>We may update these Terms from time to time. We will notify you of significant changes by updating the   
+effective date or sending a notification through the App. Your continued use of the App after changes constitutes   
+your acceptance of the revised Terms.</p>
+      </div>                                                                                                        
+                                                          
+      <div class="section">
+        <h2>12. Governing Law</h2>
+        <p>These Terms are governed by the laws of the United States and the state in which PulseLoop LLC is
+registered, without regard to its conflict of law principles. Any disputes arising under these Terms shall be       
+resolved exclusively in the courts located in that jurisdiction.</p>
+      </div>                                                                                                        
+                                                          
+      <div class="section">
+        <h2>13. Contact Us</h2>
+        <p>If you have any questions about these Terms, please contact us:</p>
+        <div class="contact-box">                                                                                   
+          <p><strong>PulseLoop LLC</strong></p>
+          <p>Email: <a href="mailto:support@pulseloop.tech">support@pulseloop.tech</a></p>                          
+          <p>Website: <a href="https://www.pulseloop.tech" target="_blank">www.pulseloop.tech</a></p>               
+        </div>                                                                                                      
+      </div>                                                                                                        
+                                                                                                                    
+    </div>                                                
+
+    <footer>
+      &copy; 2026 PulseLoop LLC. All rights reserved.
+    </footer>                                                                                                       
+  </div>
+                                                                                                                    
+</body>                                                   
+</html>
