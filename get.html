@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get PulseLoop Health</title>
+  <style>
+    body { font-family: -apple-system, system-ui, sans-serif; text-align: center; padding: 48px 20px; color: #18181b; }
+    a { display: inline-block; margin: 10px; padding: 14px 22px; border-radius: 999px; background: #FF3366; color: #fff; text-decoration: none; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <p>Redirecting to PulseLoop Health…</p>
+  <script>
+    var ios = "https://apps.apple.com/us/app/pulseloop-health/id6759825755";
+    var android = "https://play.google.com/store/apps/details?id=com.pulseloop";
+    var ua = navigator.userAgent || "";
+    if (/android/i.test(ua)) {
+      location.replace(android);
+    } else if (/iphone|ipad|ipod/i.test(ua) || (/Mac/.test(ua) && "ontouchend" in document)) {
+      location.replace(ios);
+    } else {
+      document.body.innerHTML =
+        '<h2>Get PulseLoop Health</h2>' +
+        '<a href="' + ios + '">Download on the App Store</a>' +
+        '<a href="' + android + '">Get it on Google Play</a>';
+    }
+  </script>
+</body>
+</html>
